@@ -3,6 +3,7 @@ package data
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"go-stock/backend/db"
 	"go-stock/backend/logger"
 	"time"
@@ -175,6 +176,10 @@ func updateAiConfigs(aiConfigs []*AIConfig) error {
 		err := db.Dao.Exec("DELETE FROM ai_config").Error
 		if err != nil {
 			return err
+		}
+		// 根据数据库类型重置自增序列
+		if db.GetDBType() == "postgres" {
+			return db.Dao.Exec(fmt.Sprintf("ALTER SEQUENCE ai_config_id_seq RESTART WITH 1")).Error
 		}
 		return db.Dao.Exec("DELETE FROM sqlite_sequence WHERE name='ai_config'").Error
 	}

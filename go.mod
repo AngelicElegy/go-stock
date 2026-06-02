@@ -36,7 +36,7 @@ require (
 	github.com/samber/lo v1.53.0
 	github.com/stretchr/testify v1.11.1
 	github.com/tidwall/gjson v1.18.0
-	github.com/wailsapp/wails/v2 v2.11.0
+	github.com/wailsapp/wails/v2 v2.12.0
 	go.uber.org/zap v1.27.1
 	golang.org/x/exp v0.0.0-20260410095643-746e56fc9e2f
 	golang.org/x/net v0.53.0
@@ -44,6 +44,7 @@ require (
 	golang.org/x/text v0.36.0
 	google.golang.org/genai v1.54.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
+	gorm.io/driver/postgres v1.5.11
 	gorm.io/gorm v1.31.1
 	gorm.io/plugin/soft_delete v1.2.1
 )
@@ -54,6 +55,7 @@ require (
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
 	cloud.google.com/go/compute/metadata v0.9.0 // indirect
 	git.sr.ht/~jackmordaunt/go-toast v1.1.2 // indirect
+	git.sr.ht/~jackmordaunt/go-toast/v2 v2.0.3 // indirect
 	github.com/andybalholm/cascadia v1.3.3 // indirect
 	github.com/anthropics/anthropic-sdk-go v1.37.0 // indirect
 	github.com/aws/aws-sdk-go-v2 v1.41.6 // indirect
@@ -112,6 +114,10 @@ require (
 	github.com/googleapis/gax-go/v2 v2.22.0 // indirect
 	github.com/goph/emperror v0.17.2 // indirect
 	github.com/gorilla/websocket v1.5.3 // indirect
+	github.com/jackc/pgpassfile v1.0.0 // indirect
+	github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a // indirect
+	github.com/jackc/pgx/v5 v5.5.5 // indirect
+	github.com/jackc/puddle/v2 v2.2.1 // indirect
 	github.com/jackmordaunt/icns/v3 v3.0.1 // indirect
 	github.com/jchv/go-winloader v0.0.0-20250406163304-c1995be93bd1 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
