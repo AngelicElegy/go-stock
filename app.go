@@ -92,7 +92,13 @@ func (a *App) removeCronEntry(key string) {
 }
 
 func (a *App) GetSponsorInfo() map[string]any {
-	return a.SponsorInfo
+	// 自用版：直接返回 VIP99 信息，无需赞助码
+	return map[string]any{
+		"vipLevel":    "99",
+		"vipStartTime": "2025-01-01 00:00:00",
+		"vipEndTime":   "2099-12-31 23:59:59",
+		"vipAuthTime":  "2025-01-01 00:00:00",
+	}
 }
 
 // GetEffectiveSponsorVip 从本地配置解密赞助信息并判断当前是否在 VIP 有效期内（与 ai-assistant-web / data.EffectiveSponsorVipLevel 一致）。
